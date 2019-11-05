@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--ButtonVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MBButtonVC" customModule="CustomUIButton" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vpl-XA-tHY" customClass="MBButton" customModule="CustomUIButton" customModuleProvider="target">
+                                <rect key="frame" x="225" y="330" width="150" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="8PI-TH-00g"/>
+                                    <constraint firstAttribute="width" constant="150" id="e7n-5S-aBi"/>
+                                </constraints>
+                                <state key="normal" title="Second Button"/>
+                                <connections>
+                                    <action selector="secondMBButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hFZ-Uo-F0Q"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0pb-JN-tZ3" customClass="MBButton" customModule="CustomUIButton" customModuleProvider="target">
+                                <rect key="frame" x="225" y="160" width="150" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="6t8-fr-khP"/>
+                                    <constraint firstAttribute="height" constant="50" id="9Zi-PH-2er"/>
+                                </constraints>
+                                <state key="normal" title="First Button"/>
+                                <connections>
+                                    <action selector="firstMMButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WE4-xo-MTZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AP0-d6-Ydu" customClass="MBButton" customModule="CustomUIButton" customModuleProvider="target">
+                                <rect key="frame" x="225" y="500" width="150" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Gv6-tq-nMn"/>
+                                    <constraint firstAttribute="width" constant="150" id="ebu-gO-WgF"/>
+                                </constraints>
+                                <state key="normal" title="Third Button"/>
+                                <connections>
+                                    <action selector="thirdMBButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hkP-wO-e0P"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="0pb-JN-tZ3" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="160" id="4eR-Lc-8Pc"/>
+                            <constraint firstItem="vpl-XA-tHY" firstAttribute="top" secondItem="0pb-JN-tZ3" secondAttribute="bottom" constant="120" id="IrV-pC-YEr"/>
+                            <constraint firstItem="vpl-XA-tHY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="coB-r0-pWB"/>
+                            <constraint firstItem="0pb-JN-tZ3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dci-sB-dBR"/>
+                            <constraint firstItem="AP0-d6-Ydu" firstAttribute="top" secondItem="vpl-XA-tHY" secondAttribute="bottom" constant="120" id="gub-xq-SmZ"/>
+                            <constraint firstItem="AP0-d6-Ydu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rY9-Yl-IGw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="firstMBButtonView" destination="0pb-JN-tZ3" id="yIb-aE-Sz0"/>
+                        <outlet property="secondMBButtonView" destination="vpl-XA-tHY" id="Leu-Q9-z6J"/>
+                        <outlet property="thirdMBButtonView" destination="AP0-d6-Ydu" id="6zf-H6-8P3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="101.78571428571428"/>
+        </scene>
+    </scenes>
+</document>
