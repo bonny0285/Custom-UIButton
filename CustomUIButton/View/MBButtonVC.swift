@@ -10,8 +10,8 @@ import UIKit
 
 class MBButtonVC: UIViewController {
     
-    
-    
+    //MARK: - Outlets
+
     //First MBButton Outlet
     @IBOutlet var firstMBButtonView: MBButton!
     
@@ -21,14 +21,15 @@ class MBButtonVC: UIViewController {
     //Third MBButton Outlet
     @IBOutlet var thirdMBButtonView: MBButton!
     
-    
-    
+    //MARK: - Lifecycle
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
-    
+    //MARK: - Actions
+
     //First MBButton Action
     @IBAction func firstMMButton(_ sender: MBButton) {
         firstMBButtonView.shake()

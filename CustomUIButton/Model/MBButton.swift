@@ -8,29 +8,23 @@
 
 import UIKit
 
-
-
-
-
-
-class MBButton : UIButton {
+class MBButton: UIButton {
     
+    //MARK: - Lifecycle
     
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupButton()
     }
     
-    
-    
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         setupButton()
     }
     
+    //MARK: - Methods
     
-    
-    private func setupButton(){
+    private func setupButton() {
         setupShadow()
         
         setTitleColor(.black, for: .normal)
@@ -42,7 +36,7 @@ class MBButton : UIButton {
     }
     
     //MBButton Shadow
-    private func setupShadow(){
+    private func setupShadow() {
         layer.shadowColor = UIColor.black.cgColor
         layer.shadowOffset = CGSize(width: 0.0, height: 6.0)
         layer.shadowRadius = 8
@@ -51,9 +45,7 @@ class MBButton : UIButton {
         layer.masksToBounds = false
     }
     
-    
-    
-    func shake(){
+    func shake() {
         let shake = CABasicAnimation(keyPath: "position")
         shake.duration = 0.1
         shake.repeatCount = 2
@@ -70,6 +62,5 @@ class MBButton : UIButton {
         
         layer.add(shake, forKey: "position")
     }
-    
     
 }
